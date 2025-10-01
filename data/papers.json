@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "title": "Attention Is All You Need",
+    "authors": ["Ashish Vaswani", "Noam Shazeer", "Niki Parmar", "Jakob Uszkoreit", "Llion Jones", "Aidan N. Gomez", "Łukasz Kaiser", "Illia Polosukhin"],
+    "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing with large amounts of unlabeled training data.",
+    "link": "https://arxiv.org/abs/1706.03762",
+    "category": "Machine Learning",
+    "year": "2017",
+    "venue": "NeurIPS"
+  },
+  {
+    "id": "2",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "authors": ["Jacob Devlin", "Ming-Wei Chang", "Kenton Lee", "Kristina Toutanova"],
+    "abstract": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+    "link": "https://arxiv.org/abs/1810.04805",
+    "category": "Machine Learning",
+    "year": "2018",
+    "venue": "NAACL"
+  },
+  {
+    "id": "3",
+    "title": "ResNet: Deep Residual Learning for Image Recognition",
+    "authors": ["Kaiming He", "Xiangyu Zhang", "Shaoqing Ren", "Jian Sun"],
+    "abstract": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers—8× deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers.",
+    "link": "https://arxiv.org/abs/1512.03385",
+    "category": "Machine Learning",
+    "year": "2015",
+    "venue": "CVPR"
+  },
+  {
+    "id": "4",
+    "title": "GPT-3: Language Models are Few-Shot Learners",
+    "authors": ["Tom B. Brown", "Benjamin Mann", "Nick Ryder", "Melanie Subbiah", "Jared D. Kaplan", "Prafulla Dhariwal", "Arvind Neelakantan", "Pranav Shyam", "Girish Sastry", "Amanda Askell", "Sandeep Agarwal", "Ariel Herbert-Voss", "Gretchen Krueger", "Tom Henighan", "Reid Hoffman", "Yacine Jernite", "Sam McCandlish", "Alec Radford", "Ilya Sutskever", "Dario Amodei"],
+    "abstract": "We show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10× more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.",
+    "link": "https://arxiv.org/abs/2005.14165",
+    "category": "Machine Learning",
+    "year": "2020",
+    "venue": "NeurIPS"
+  },
+  {
+    "id": "5",
+    "title": "Vision Transformer: An Image is Worth 16x16 Words",
+    "authors": ["Alexey Dosovitskiy", "Lucas Beyer", "Alexander Kolesnikov", "Dirk Weissenborn", "Xiaohua Zhai", "Thomas Unterthiner", "Mostafa Dehghani", "Matthias Minderer", "Georg Heigold", "Sylvain Gelly", "Jakob Uszkoreit", "Neil Houlsby"],
+    "abstract": "While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.",
+    "link": "https://arxiv.org/abs/2010.11929",
+    "category": "Machine Learning",
+    "year": "2020",
+    "venue": "ICLR"
+  },
+  {
+    "id": "6",
+    "title": "Reinforcement Learning: An Introduction",
+    "authors": ["Richard S. Sutton", "Andrew G. Barto"],
+    "abstract": "Reinforcement learning is learning what to do—how to map situations to actions—so as to maximize a numerical reward signal. The learner is not told which actions to take, but instead must discover which actions yield the most reward by trying them. In the most interesting and challenging cases, actions may affect not only the immediate reward but also the next situation and, through that, all subsequent rewards. These two characteristics—trial-and-error search and delayed reward—are the two most important distinguishing features of reinforcement learning.",
+    "link": "https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf",
+    "category": "Machine Learning",
+    "year": "2018",
+    "venue": "MIT Press"
+  },
+  {
+    "id": "7",
+    "title": "Deep Learning for Robotics: A Survey",
+    "authors": ["Arsalan Mousavian", "Dibyendu Mukherjee", "Bharath Sankaran", "Dieter Fox", "Jitendra Malik"],
+    "abstract": "Deep learning has revolutionized many machine learning tasks in recent years, ranging from image classification and video processing to speech recognition and natural language understanding. The data-driven nature of deep learning is well suited to robotics, where large amounts of data can be collected and used to train models. In this survey, we provide an overview of the recent developments in deep learning for robotics, focusing on the areas of perception, control, and planning. We discuss the challenges and opportunities in applying deep learning to robotics, and provide insights into future research directions.",
+    "link": "https://arxiv.org/abs/2103.04918",
+    "category": "Robotics",
+    "year": "2021",
+    "venue": "IEEE RA-L"
+  },
+  {
+    "id": "8",
+    "title": "Sim-to-Real Transfer in Robotics",
+    "authors": ["Josh Tobin", "Rachel Fong", "Alex Ray", "Jonas Schneider", "Wojciech Zaremba", "Pieter Abbeel"],
+    "abstract": "Transferring policies trained in simulation to the real world is a promising approach for robot learning. However, the reality gap between simulation and reality often leads to poor performance when deploying simulated policies on real robots. In this work, we present a systematic study of sim-to-real transfer for robotic manipulation tasks. We analyze the factors that contribute to the reality gap and propose techniques to improve transfer performance. Our experiments show that domain randomization and progressive training can significantly improve sim-to-real transfer performance.",
+    "link": "https://arxiv.org/abs/1703.06907",
+    "category": "Robotics",
+    "year": "2017",
+    "venue": "ICRA"
+  }
+]
