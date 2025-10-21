@@ -32,6 +32,7 @@ function MainTabNavigator() {
         },
         tabBarActiveTintColor: '#007AFF',
         tabBarInactiveTintColor: '#666666',
+        tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: '#1a1a1a',
           borderTopWidth: 1,
@@ -55,7 +56,7 @@ function MainTabNavigator() {
       <Tab.Screen 
         name="Feed" 
         component={FeedScreen}
-        options={{ title: 'PaperFeed' }}
+        options={{ title: 'PaperFeed', headerShown: false }}
       />
       <Tab.Screen 
         name="Bookmarks" 
@@ -87,33 +88,33 @@ export default function App() {
   return (
     <NavigationContainer>
       <StatusBar style="light" />
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        {isFirstLaunch ? (
-          <Stack.Screen name="Onboarding" component={OnboardingScreen} />
-        ) : (
-          <>
-            <Stack.Screen name="MainTabs" component={MainTabNavigator} />
-            <Stack.Screen 
-              name="PaperDetail" 
-              component={PaperDetailScreen}
-              options={{
-                headerShown: true,
-                title: 'Paper Details',
-                headerStyle: {
-                  backgroundColor: '#1a1a1a',
-                  borderBottomWidth: 1,
-                  borderBottomColor: '#333333',
-                },
-                headerTitleStyle: {
-                  fontWeight: '600',
-                  fontSize: 18,
-                  color: '#ffffff',
-                },
-                headerTintColor: '#ffffff',
-              }}
-            />
-          </>
-        )}
+      <Stack.Navigator 
+        screenOptions={{ headerShown: false }}
+        initialRouteName={isFirstLaunch ? 'Onboarding' : 'MainTabs'}
+      >
+        {/* Register ALL screens, not conditionally */}
+        <Stack.Screen name="Onboarding" component={OnboardingScreen} />
+        <Stack.Screen name="MainTabs" component={MainTabNavigator} />
+        <Stack.Screen 
+          name="PaperDetail" 
+          component={PaperDetailScreen}
+          options={{
+            headerShown: true,
+            title: 'Paper Details',
+            headerBackTitle: 'Back',
+            headerStyle: {
+              backgroundColor: '#1a1a1a',
+              borderBottomWidth: 1,
+              borderBottomColor: '#333333',
+            },
+            headerTitleStyle: {
+              fontWeight: '600',
+              fontSize: 18,
+              color: '#ffffff',
+            },
+            headerTintColor: '#ffffff',
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
